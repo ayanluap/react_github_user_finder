@@ -1,0 +1,33 @@
+form {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type='text'] {
+  border: none;
+  padding: 1rem;
+  background: #c4c4c4;
+  transition: all var(--time) ease-in-out;
+}
+
+form input[type='text']:focus {
+  outline: none;
+  border-radius: 50px;
+}
+
+form input[type='submit'],
+div .clrBtn {
+  width: 100%;
+  padding: 0.5rem;
+  /* border-radius: 0; */
+}
+
+div .clrBtn {
+  margin-top: 0;
+  background: #818181;
+}
+
+div .clrBtn:hover {
+  background: #999;
+}
