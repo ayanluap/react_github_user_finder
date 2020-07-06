@@ -19,42 +19,35 @@
 body {
   font-family: 'montserrat', sans-serif;
   box-sizing: border-box;
-  font-size: 62.5%;
   list-style: none;
+  width: 100%;
 }
 
-h1 {
-  font-size: 1.5rem;
+nav {
+  height: 65px;
 }
 
-.btn {
-  display: inline-block;
-  text-decoration: none;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.link {
   font-size: 1rem;
-  color: #fff;
-  background-color: var(--secondary);
-  padding: 1rem 3rem;
-  margin: 1rem auto;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all var(--time) ease;
-  border: none;
 }
 
-.btn:hover {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
-  background-color: var(--secondary-dark);
+#users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
 }
 
-.btn:focus {
-  outline: none;
+.rounded-circle {
+  width: 100px;
 }
 
-.btn-lg {
-  padding: 1rem 2rem;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
+.badge {
+  font-size: 1rem;
+  margin: auto 0;
 }

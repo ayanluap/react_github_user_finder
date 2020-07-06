@@ -1,5 +1,5 @@
 import React from 'react';
-import UserItems from './UserItems';
+import UserItem from './UserItem';
 import Loader from '../layout/Loader';
 import PropTypes from 'prop-types';
 
@@ -8,9 +8,9 @@ const Users = ({ users, loading }) => {
     return <Loader />;
   } else {
     return (
-      <div className="users">
+      <div id="users" className="mt-3">
         {users.map((user) => (
-          <UserItems key={user.id} user={user} />
+          <UserItem user={user} key={user.id} />
         ))}
       </div>
     );
